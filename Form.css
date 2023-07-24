@@ -16,12 +16,6 @@ input[type=text], select{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.container form{
-    padding: 0 40px;
-    box-sizing: border-box;
-}
-
-
 label {
     padding: 12px 0;
     display: inline-block;
@@ -163,6 +157,10 @@ label {
     transform: translateY(-500%);
 }
 
+.container form.row{
+    display: flex;
+    
+}
 .row::after {
     content:none;
     display: table;
