@@ -177,6 +177,7 @@ input[type= "submit"]{
     font-weight: 700;
     cursor: pointer;
     outline: none;
+    transform: translateY(-800%);
 }
 
 input[type= "submit"] :hover{
