@@ -38,60 +38,123 @@ label {
     float: left;
     width: 25%;
     margin-top: 6px;
+    translate: 130%;
+    transform: translateY(-225%);
 }
 
 .col-4 {
     float: bottom;
     width: 10%;
     margin-top: 6px;
+    translate: 325%;
+    transform: translateY(-110%);
+}
+.col-31 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    translate: 130%;
+    transform: translateY(-850%);
+}
+
+.col-41 {
+    float: bottom;
+    width: 10%;
+    margin-top: 6px;
+    translate: 325%;
+    transform: translateY(-400%);
 }
 
 .col-5 {
     float: left;
     width: 25%;
     margin-top: 6px;
+    translate: 225%;
+    transform: translateY(-450%);
+
 }
 
 .col-6 {
     float: bottom;
     width: 15%;
     margin-top: 6px;
+    translate: 375%;
+    transform: translateY(-215%);
+}
+
+.col-51 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    transform: translateY(-625%);
+
+}
+
+.col-61 {
+    float: bottom;
+    width: 15%;
+    margin-top: 6px;
+    transform: translateY(-300%);
 }
 
 .col-7 {
     float: left;
     width: 25%;
     margin-top: 6px;
+    transform: translateY(-400%);
 }
 
 .col-8 {
     float: bottom;
     width: 25%;
     margin-top: 6px;
+    transform: translateY(-190%);
+}
+
+.col-71 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    translate: 130%;
+    transform: translateY(-625%);
+}
+
+.col-81 {
+    float: bottom;
+    width: 25%;
+    margin-top: 6px;
+    translate: 130%;
+    transform: translateY(-295%);
 }
 
 .col-9 {
     float: left;
     width: 25%;
     margin-top: 6px;
+    transform: translateY(-625%);
 }
 
 .col-10 {
     float: bottom;
     width: 75%;
     margin-top: 6px;
+    transform: translateY(-300%);
 }
 
 .col-11 {
     float: left;
     width: 25%;
     margin-top: 6px;
+    translate: 235%;
+    transform: translateY(-1075%);
 }
 
 .col-12 {
     float: bottom;
     width: 18%;
     margin-top: 6px;
+    translate: 325%;
+    transform: translateY(-500%);
 }
 
 .row::after {
@@ -100,7 +163,7 @@ label {
 }
 
 @media screen and (max-width: 600px) {
-    .col-1, .col-2,.col-3, .col-4,.col-5, .col-6,.col-7, .col-8,.col-9, .col-10,.col-11, .col-12{
+    .col-1, .col-2,.col-3, .col-4,.col-31, .col-41,.col-5, .col-6,.col-51, .col-61,.col-7, .col-8,.col-71, .col-81,.col-9, .col-10,.col-11, .col-12{
       width: 100%;
       margin-top: 0;
     }
