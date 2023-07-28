@@ -1,0 +1,95 @@
+:root{
+  --success-color: rgb(12, 171, 12);
+  --error-color: #e92611;
+}
+
+body {
+    background: linear-gradient(120deg, #33ccff, #99ff99) ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+
+.form {  
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.form-control label {
+  margin: 5px 10px 5px 0;
+  font: sans-serif;
+  font-size: 16px;
+}
+
+.form-control input  {
+  vertical-align: middle;
+  margin: 10px 20px 20px 0;
+  padding: 10px;
+  background-color:whitesmoke;
+  border: 1px solid gray;
+  width: 48.5vh;
+}
+
+.form-control input:focus{
+  outline: 0;
+  border-color: dimgray;
+}
+
+.form-control.success input{
+  border-color: var(--success-color) ;
+}
+
+.form-control.error input{
+  border-color: var(--error-color) ;
+}
+
+.form-control small{
+  color: var(--error-color) ;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small{
+  visibility: visible;
+}
+
+.form-control select {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color:whitesmoke;
+  border: 1px solid gray;
+  width: 50vh;
+
+}
+
+.form button {
+  padding: 15px 20px;
+  background-color: #54f070;
+  border: 1px solid green;
+  color: white;
+  cursor: pointer;
+  font-style: italic;
+  width: 20vh;
+  float: left;
+}
+
+.form button:hover {
+  background-color: #54f070;
+}
+
+@media (max-width: 600px) {
+  .form-control input {
+    margin: 10px 0;
+  }
+  
+  .form-control {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
