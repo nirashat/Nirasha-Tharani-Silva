@@ -31,64 +31,76 @@ const checkEmail = (emailVal) =>{
 
 }
 
-form.addEventListener('submit', function(e){
+form.onsubmit = function(e){
     e.preventDefault();
 
     if(company.value === ''){
-        showError(company, 'Company name is required');
+        console.log(showError(company, 'Company name is required'));
     }else{
-        showSuccess(company);
+        console.log(showSuccess(company));
     }
 
     if(username.value === ''){
-        showError(username, 'User name is required');
+        console.log(showError(username, 'User name is required'));
     }else{
-        showSuccess(username);
+        console.log(showSuccess(username));
     }
 
     if(email.value === ''){
-        showError(email, 'Email is required');
+        console.log(showError(email, 'Email is required'));
     
     }else if(checkEmail(email.value)){
-        showError(email, 'Email is not valid')
+        console.log(showError(email, 'Email is not valid'));
     }else{
-        showSuccess(email);
+        console.log(showSuccess(email));
     }
 
     if(fName.value === ''){
-        showError(fName, 'First name is required');
+        console.log(showError(fName, 'First name is required'));
     }else{
-        showSuccess(fName);
+        console.log(showSuccess(fName));
     }
 
     if(lName.value === ''){
-        showError(lName, 'Last name is required');
+        console.log(showError(lName, 'Last name is required'));
     }else{
-        showSuccess(lName);
+        console.log(showSuccess(lName));
     }
 
     if(address.value === ''){
-        showError(address, 'Address is required');
+        console.log(showError(address, 'Address is required'));
     }else{
-        showSuccess(address);
+        console.log(showSuccess(address));
     }
 
     if(city.value === ''){
-        showError(city, 'City is required');
+        console.log(showError(city, 'City is required'));
     }else{
-        showSuccess(city);
+        console.log(showSuccess(city));
     }
 
     if(postal.value === ''){
-        showError(postal, 'ZIP Code is required');
+        console.log(showError(postal, 'ZIP Code is required'));
     }else{
-        showSuccess(postal);
+        console.log(showSuccess(postal));
     }
 
     if(country.value === ''){
-        showError(country, 'Country name is required');
+        console.log(showError(country, 'Country name is required'));
     }else{
-        showSuccess(country);
+        console.log(showSuccess(country));
     }
     checkEmail(email);
-});
+    console.log("Submit form successfully reached.");
+
+    console.log("Company: " + company);
+    console.log("Username: "+username);
+    console.log("Email: "+ email);
+    console.log("First Name: "+fName);
+    console.log("Last Name: "+lName);
+    console.log("Address: "+address);
+    console.log("City: "+city);
+    console.log("ZIP Code: "+postal);
+    console.log("Country: "+country);
+
+};
